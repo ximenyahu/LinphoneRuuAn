@@ -571,5 +571,5 @@
         <item quantity="other">\@string/contact_delete_one_dialog</item>
     </plurals>
     <string name="chat_settings_mark_as_read_notif_dismissal_title">撤消通知后标记为已读</string>
-    <string name="sip_hint">请输入你的SIP地址</string>
+    <string name="sip_hint">SIP域名</string>
 </resources>

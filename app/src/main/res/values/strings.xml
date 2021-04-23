@@ -736,5 +736,5 @@
     <string name="content_description_close_bubble">Close notification bubble</string>
     <string name="content_description_open_app">Open conversation in app instead of bubble</string>
     <string name="content_description_export">Open file in third-party app</string>
-    <string name="sip_hint">请输入你的SIP域名</string>
+    <string name="sip_hint">SIP域名</string>
 </resources>

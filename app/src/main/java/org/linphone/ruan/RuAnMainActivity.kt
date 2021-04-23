@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.bottomnavigation.LabelVisibilityMode
 import org.linphone.R
 import org.linphone.compatibility.Compatibility
 import org.linphone.contact.ContactsUpdatedListenerStub
@@ -40,6 +41,8 @@ class RuAnMainActivity : AppCompatActivity() {
         // R.id.navigation_bench, R.id.navigation_message, R.id.navigation_contacts, R.id.navigation_mine))
         // setupActionBarWithNavController(navController, appBarConfiguration)
 
+        // 底部导航区域显示模式
+        navView.labelVisibilityMode = LabelVisibilityMode.LABEL_VISIBILITY_LABELED
         navView.setupWithNavController(navController)
     }
 
