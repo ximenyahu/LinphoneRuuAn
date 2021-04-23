@@ -18,6 +18,7 @@ class MineFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         mineViewModel = ViewModelProvider(this).get(MineViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_mine, container, false)
         val textView: TextView = root.findViewById(R.id.text_mine)
