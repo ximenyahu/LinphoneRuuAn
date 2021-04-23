@@ -22,11 +22,11 @@ package org.linphone.activities.main.settings.viewmodels
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.MutableLiveData
 import java.lang.NumberFormatException
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.main.settings.SettingListenerStub
 import org.linphone.core.Factory
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class VideoSettingsViewModel : GenericSettingsViewModel() {
     val enableVideoListener = object : SettingListenerStub() {

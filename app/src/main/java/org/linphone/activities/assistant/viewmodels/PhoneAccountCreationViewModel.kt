@@ -24,11 +24,11 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.core.AccountCreator
 import org.linphone.core.AccountCreatorListenerStub
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.AppUtils
 import org.linphone.utils.Event
 

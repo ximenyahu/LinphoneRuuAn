@@ -22,12 +22,12 @@ package org.linphone.activities.main.chat.viewmodels
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.main.chat.GroupChatRoomMember
 import org.linphone.activities.main.viewmodels.ErrorReportingViewModel
 import org.linphone.core.*
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.Event
 
 class GroupInfoViewModelFactory(private val chatRoom: ChatRoom?) :

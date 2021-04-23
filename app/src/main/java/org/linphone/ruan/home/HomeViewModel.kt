@@ -1,4 +1,4 @@
-package org.linphone.ui.home
+package org.linphone.ruan.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -28,7 +28,6 @@ import androidx.navigation.NavOptions
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.assistant.fragments.*
 import org.linphone.activities.main.chat.fragments.ChatRoomCreationFragment
@@ -47,6 +46,7 @@ import org.linphone.activities.main.settings.fragments.SettingsFragment
 import org.linphone.activities.main.sidemenu.fragments.SideMenuFragment
 import org.linphone.contact.NativeContact
 import org.linphone.core.Address
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 internal fun Fragment.findMasterNavController(): NavController {
     return if (!resources.getBoolean(R.bool.isTablet)) {

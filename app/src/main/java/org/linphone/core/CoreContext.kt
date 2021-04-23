@@ -48,7 +48,6 @@ import javax.crypto.SecretKey
 import javax.crypto.spec.GCMParameterSpec
 import kotlin.math.abs
 import kotlinx.coroutines.*
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.call.CallActivity
 import org.linphone.activities.call.IncomingCallActivity
@@ -59,6 +58,7 @@ import org.linphone.contact.ContactsManager
 import org.linphone.core.tools.Log
 import org.linphone.mediastream.Version
 import org.linphone.notifications.NotificationsManager
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.AppUtils
 import org.linphone.utils.AudioRouteUtils
 import org.linphone.utils.Event

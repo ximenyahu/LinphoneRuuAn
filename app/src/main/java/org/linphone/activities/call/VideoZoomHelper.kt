@@ -26,8 +26,8 @@ import android.view.ScaleGestureDetector
 import android.view.View
 import kotlin.math.max
 import kotlin.math.min
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.core.Call
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class VideoZoomHelper(context: Context, private var videoDisplayView: View) : GestureDetector.SimpleOnGestureListener() {
     private var scaleDetector: ScaleGestureDetector

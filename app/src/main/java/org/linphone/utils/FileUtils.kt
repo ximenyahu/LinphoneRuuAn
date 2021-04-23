@@ -36,10 +36,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.withContext
-import org.linphone.LinphoneApplication
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class FileUtils {
     companion object {

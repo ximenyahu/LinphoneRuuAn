@@ -20,11 +20,11 @@
 package org.linphone.activities.main.chat.data
 
 import androidx.lifecycle.MutableLiveData
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.contact.GenericContactData
 import org.linphone.core.ChatRoomSecurityLevel
 import org.linphone.core.Participant
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.LinphoneUtils
 
 class DevicesListGroupData(private val participant: Participant) : GenericContactData(participant.address) {

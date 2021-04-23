@@ -1,4 +1,4 @@
-package org.linphone.ui.home
+package org.linphone.ruan.home
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -22,7 +22,6 @@ package org.linphone.activities.assistant.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.activities.assistant.AssistantActivity
@@ -31,6 +30,7 @@ import org.linphone.activities.assistant.viewmodels.SharedAssistantViewModel
 import org.linphone.activities.main.navigateToEchoCancellerCalibration
 import org.linphone.activities.main.navigateToQrCode
 import org.linphone.databinding.AssistantRemoteProvisioningFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class RemoteProvisioningFragment : GenericFragment<AssistantRemoteProvisioningFragmentBinding>() {
     private lateinit var sharedViewModel: SharedAssistantViewModel

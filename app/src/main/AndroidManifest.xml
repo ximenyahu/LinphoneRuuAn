@@ -18,7 +18,8 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <!-- Needed to shared downloaded files if setting is on -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
 
     <!-- Both permissions below are for contacts sync account -->
@@ -29,18 +30,18 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
-        android:name=".LinphoneApplication"
+        android:name=".ruan.application.LinphoneApplication"
         android:allowBackup="false"
+        android:allowNativeHeapPointerTagging="false"
+        android:extractNativeLibs="${extractNativeLibs}"
         android:icon="@mipmap/ic_launcher"
         android:label="${appLabel}"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:extractNativeLibs="${extractNativeLibs}"
-        android:theme="@style/AppTheme"
-        android:allowNativeHeapPointerTagging="false">
+        android:theme="@style/AppTheme">
 
-<!--            android:name=".activities.launcher.LauncherActivity"-->
+        <!--            android:name=".activities.launcher.LauncherActivity"-->
         <activity
-            android:name=".ui.RuAnMainActivity"
+            android:name=".activities.launcher.LauncherActivity"
             android:noHistory="true"
             android:theme="@style/LauncherTheme">
             <intent-filter>
@@ -52,7 +53,10 @@
                 android:resource="@xml/shortcuts" />
         </activity>
 
-        <activity android:name=".activities.main.MainActivity"
+        <activity android:name=".ruan.RuAnMainActivity" />
+
+        <activity
+            android:name=".activities.main.MainActivity"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustResize">
             <nav-graph android:value="@navigation/main_nav_graph" />
@@ -64,6 +68,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="text/*" />
                 <data android:mimeType="image/*" />
                 <data android:mimeType="audio/*" />
@@ -74,6 +79,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.SEND_MULTIPLE" />
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="image/*" />
                 <data android:mimeType="audio/*" />
                 <data android:mimeType="video/*" />
@@ -82,8 +88,10 @@
 
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="${linphone_address_mime_type}" />
             </intent-filter>
 
@@ -91,8 +99,10 @@
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.DIAL" />
                 <action android:name="android.intent.action.CALL" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="tel" />
                 <data android:scheme="sip" />
                 <data android:scheme="sips" />
@@ -103,7 +113,9 @@
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <action android:name="android.intent.action.SENDTO" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:scheme="sms" />
                 <data android:scheme="smsto" />
                 <data android:scheme="mms" />
@@ -111,19 +123,23 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.assistant.AssistantActivity"
-            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".activities.assistant.AssistantActivity"
+            android:windowSoftInputMode="adjustResize" />
 
-        <activity android:name=".activities.call.CallActivity"
+        <activity
+            android:name=".activities.call.CallActivity"
             android:launchMode="singleTop"
             android:resizeableActivity="true"
             android:supportsPictureInPicture="true" />
 
-        <activity android:name=".activities.call.IncomingCallActivity"
+        <activity
+            android:name=".activities.call.IncomingCallActivity"
             android:launchMode="singleTop"
             android:noHistory="true" />
 
-        <activity android:name=".activities.call.OutgoingCallActivity"
+        <activity
+            android:name=".activities.call.OutgoingCallActivity"
             android:launchMode="singleTop"
             android:noHistory="true" />
 
@@ -138,10 +154,11 @@
         <service
             android:name=".core.CoreService"
             android:foregroundServiceType="phoneCall|camera|microphone"
-            android:stopWithTask="false"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"
+            android:stopWithTask="false" />
 
-        <service android:name="org.linphone.core.tools.firebase.FirebaseMessaging"
+        <service
+            android:name="org.linphone.core.tools.firebase.FirebaseMessaging"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -177,7 +194,7 @@
 
         <receiver android:name=".core.CorePushReceiver">
             <intent-filter>
-                <action android:name="org.linphone.core.action.PUSH_RECEIVED"/>
+                <action android:name="org.linphone.core.action.PUSH_RECEIVED" />
             </intent-filter>
         </receiver>
 

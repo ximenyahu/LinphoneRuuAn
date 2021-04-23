@@ -27,11 +27,11 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import java.io.ByteArrayOutputStream
 import java.io.IOException
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.activities.main.contact.data.NumberOrAddressEditorData
 import org.linphone.contact.*
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.ImageUtils
 import org.linphone.utils.PermissionHelper
 

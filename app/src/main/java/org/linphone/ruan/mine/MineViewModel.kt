@@ -1,13 +1,12 @@
-package org.linphone.ui.contacts
+package org.linphone.ruan.mine
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
-
+class MineViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is mine Fragment"
     }
     val text: LiveData<String> = _text
 }

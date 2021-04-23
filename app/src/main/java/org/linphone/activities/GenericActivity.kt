@@ -30,11 +30,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.ActivityNavigator
 import java.util.*
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
-import org.linphone.LinphoneApplication.Companion.ensureCoreExists
 import org.linphone.R
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
+import org.linphone.ruan.application.LinphoneApplication.Companion.ensureCoreExists
 
 abstract class GenericActivity : AppCompatActivity() {
     private var timer: Timer? = null

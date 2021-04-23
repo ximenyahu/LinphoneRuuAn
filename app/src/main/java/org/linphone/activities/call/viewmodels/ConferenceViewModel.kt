@@ -21,10 +21,10 @@ package org.linphone.activities.call.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.activities.call.data.ConferenceParticipantData
 import org.linphone.core.*
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class ConferenceViewModel : ViewModel() {
     val isConferencePaused = MutableLiveData<Boolean>()

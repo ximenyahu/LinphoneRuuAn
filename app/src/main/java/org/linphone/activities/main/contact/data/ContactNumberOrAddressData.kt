@@ -19,8 +19,8 @@
  */
 package org.linphone.activities.main.contact.data
 
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.core.Address
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 class ContactNumberOrAddressData(
     val address: Address?,

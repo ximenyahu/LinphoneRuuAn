@@ -26,9 +26,9 @@ import androidx.security.crypto.MasterKey
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.compatibility.Compatibility
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class CorePreferences constructor(private val context: Context) {
     private var _config: Config? = null

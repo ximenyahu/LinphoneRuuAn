@@ -17,10 +17,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.linphone
+package org.linphone.ruan.application
 
 import android.app.Application
 import android.content.Context
+import org.linphone.R
 import org.linphone.core.CoreContext
 import org.linphone.core.CorePreferences
 import org.linphone.core.Factory
@@ -33,7 +34,7 @@ class LinphoneApplication : Application() {
         lateinit var coreContext: CoreContext
 
         fun ensureCoreExists(context: Context, pushReceived: Boolean = false) {
-            if (::coreContext.isInitialized && !coreContext.stopped) {
+            if (Companion::coreContext.isInitialized && !coreContext.stopped) {
                 Log.d("[Application] Skipping Core creation (push received? $pushReceived)")
                 return
             }

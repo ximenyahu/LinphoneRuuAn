@@ -24,14 +24,14 @@ import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.activities.main.settings.viewmodels.ContactsSettingsViewModel
 import org.linphone.compatibility.Compatibility
 import org.linphone.core.tools.Log
 import org.linphone.databinding.SettingsContactsFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.PermissionHelper
 
 class ContactsSettingsFragment : GenericFragment<SettingsContactsFragmentBinding>() {

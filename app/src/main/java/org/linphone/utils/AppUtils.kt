@@ -25,9 +25,9 @@ import android.text.format.Formatter.formatShortFileSize
 import android.util.TypedValue
 import androidx.emoji.text.EmojiCompat
 import java.util.*
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 /**
  * Various utility methods for application

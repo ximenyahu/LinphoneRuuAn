@@ -21,11 +21,11 @@ package org.linphone.activities.main.chat.data
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.contact.Contact
 import org.linphone.core.EventLog
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.LinphoneUtils
 
 class EventData(private val eventLog: EventLog) {

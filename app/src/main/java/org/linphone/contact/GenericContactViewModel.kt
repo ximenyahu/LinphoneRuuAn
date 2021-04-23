@@ -20,9 +20,9 @@
 package org.linphone.contact
 
 import androidx.lifecycle.MutableLiveData
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.activities.main.viewmodels.ErrorReportingViewModel
 import org.linphone.core.Address
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.LinphoneUtils
 
 abstract class GenericContactViewModel(private val sipAddress: Address) : ErrorReportingViewModel(), ContactDataInterface {

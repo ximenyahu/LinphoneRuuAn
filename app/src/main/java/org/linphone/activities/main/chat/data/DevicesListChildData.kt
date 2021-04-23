@@ -19,10 +19,10 @@
  */
 package org.linphone.activities.main.chat.data
 
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.core.ChatRoomSecurityLevel
 import org.linphone.core.ParticipantDevice
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class DevicesListChildData(private val device: ParticipantDevice) {
     val deviceName: String = device.name.orEmpty()

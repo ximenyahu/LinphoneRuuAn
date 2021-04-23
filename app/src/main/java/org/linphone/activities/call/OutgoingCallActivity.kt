@@ -27,8 +27,6 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.flexbox.FlexboxLayout
-import org.linphone.LinphoneApplication
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.call.viewmodels.CallViewModel
 import org.linphone.activities.call.viewmodels.CallViewModelFactory
@@ -37,6 +35,8 @@ import org.linphone.core.Call
 import org.linphone.core.tools.Log
 import org.linphone.databinding.CallOutgoingActivityBinding
 import org.linphone.mediastream.Version
+import org.linphone.ruan.application.LinphoneApplication
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.PermissionHelper
 
 class OutgoingCallActivity : ProximitySensorActivity() {

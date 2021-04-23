@@ -32,11 +32,11 @@ import android.os.AsyncTask.THREAD_POOL_EXECUTOR
 import android.provider.ContactsContract
 import android.util.Patterns
 import kotlinx.coroutines.*
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.core.*
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.PermissionHelper
 
 interface ContactsUpdatedListener {

@@ -1,4 +1,4 @@
-package org.linphone.ui.contacts
+package org.linphone.ruan.mine
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,18 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import org.linphone.R
 
-class ContactsFragment : Fragment() {
-
-    private lateinit var notificationsViewModel: NotificationsViewModel
+class MineFragment : Fragment() {
+    private lateinit var mineViewModel: MineViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-                ViewModelProvider(this).get(NotificationsViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
-        val textView: TextView = root.findViewById(R.id.text_notifications)
-        notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
+        mineViewModel = ViewModelProvider(this).get(MineViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_mine, container, false)
+        val textView: TextView = root.findViewById(R.id.text_mine)
+        mineViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

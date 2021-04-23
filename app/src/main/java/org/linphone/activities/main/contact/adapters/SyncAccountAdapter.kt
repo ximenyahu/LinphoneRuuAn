@@ -8,8 +8,8 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import kotlin.collections.ArrayList
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class SyncAccountAdapter : BaseAdapter() {
     private var accounts: ArrayList<Triple<String, String, Drawable?>> = arrayListOf()

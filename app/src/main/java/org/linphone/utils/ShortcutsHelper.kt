@@ -30,7 +30,6 @@ import androidx.core.app.Person
 import androidx.core.content.LocusIdCompat
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.graphics.drawable.IconCompat
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.main.MainActivity
 import org.linphone.contact.Contact
@@ -40,6 +39,7 @@ import org.linphone.core.ChatRoom
 import org.linphone.core.ChatRoomCapabilities
 import org.linphone.core.tools.Log
 import org.linphone.mediastream.Version
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 @TargetApi(25)
 class ShortcutsHelper(val context: Context) {

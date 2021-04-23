@@ -1,4 +1,4 @@
-package org.linphone.ui.message
+package org.linphone.ruan.message
 
 import android.os.Bundle
 import android.view.LayoutInflater

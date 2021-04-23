@@ -44,13 +44,13 @@ import com.bumptech.glide.request.target.Target
 import com.bumptech.glide.signature.ObjectKey
 import com.google.android.material.switchmaterial.SwitchMaterial
 import org.linphone.BR
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.GenericActivity
 import org.linphone.activities.main.settings.SettingListener
 import org.linphone.contact.ContactAvatarView
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 /**
  * This file contains all the data binding necessary for the app

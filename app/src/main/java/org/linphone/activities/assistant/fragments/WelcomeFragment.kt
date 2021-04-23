@@ -29,7 +29,6 @@ import android.text.style.ClickableSpan
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import java.util.regex.Pattern
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.activities.assistant.viewmodels.WelcomeViewModel
@@ -39,6 +38,7 @@ import org.linphone.activities.main.navigateToEmailAccountCreation
 import org.linphone.activities.main.navigateToGenericLogin
 import org.linphone.activities.main.navigateToRemoteProvisioning
 import org.linphone.databinding.AssistantWelcomeFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 class WelcomeFragment : GenericFragment<AssistantWelcomeFragmentBinding>() {
     private lateinit var viewModel: WelcomeViewModel

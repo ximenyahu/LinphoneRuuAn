@@ -20,11 +20,11 @@
 package org.linphone.activities.call.data
 
 import androidx.lifecycle.MutableLiveData
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.activities.call.viewmodels.StatItemData
 import org.linphone.activities.call.viewmodels.StatType
 import org.linphone.contact.GenericContactData
 import org.linphone.core.*
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class CallStatisticsData(val call: Call) : GenericContactData(call.remoteAddress) {
     val audioStats = MutableLiveData<ArrayList<StatItemData>>()

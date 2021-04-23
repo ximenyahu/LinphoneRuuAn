@@ -29,7 +29,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.GenericActivity
 import org.linphone.activities.main.MainActivity
@@ -40,6 +39,7 @@ import org.linphone.core.ChatRoom
 import org.linphone.core.Factory
 import org.linphone.core.tools.Log
 import org.linphone.databinding.ChatBubbleActivityBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.FileUtils
 
 class ChatBubbleActivity : GenericActivity() {

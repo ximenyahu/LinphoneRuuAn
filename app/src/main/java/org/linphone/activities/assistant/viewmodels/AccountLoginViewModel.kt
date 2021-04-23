@@ -20,10 +20,10 @@
 package org.linphone.activities.assistant.viewmodels
 
 import androidx.lifecycle.*
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.core.*
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.Event
 
 class AccountLoginViewModelFactory(private val accountCreator: AccountCreator) :

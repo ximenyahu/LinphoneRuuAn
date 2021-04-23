@@ -20,12 +20,12 @@
 package org.linphone.activities.main.settings.viewmodels
 
 import androidx.lifecycle.MutableLiveData
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.main.settings.SettingListenerStub
 import org.linphone.core.CoreContext
 import org.linphone.core.Factory
 import org.linphone.mediastream.Version
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.AppUtils
 import org.linphone.utils.Event
 

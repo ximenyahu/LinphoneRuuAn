@@ -19,9 +19,9 @@
  */
 package org.linphone.activities.main.about
 
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.activities.main.viewmodels.LogsUploadViewModel
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 class AboutViewModel : LogsUploadViewModel() {
     val appVersion: String = coreContext.appVersion

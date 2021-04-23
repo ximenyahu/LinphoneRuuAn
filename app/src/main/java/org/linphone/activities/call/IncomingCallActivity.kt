@@ -28,7 +28,6 @@ import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.GenericActivity
 import org.linphone.activities.call.viewmodels.IncomingCallViewModel
@@ -38,6 +37,7 @@ import org.linphone.core.Call
 import org.linphone.core.tools.Log
 import org.linphone.databinding.CallIncomingActivityBinding
 import org.linphone.mediastream.Version
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.PermissionHelper
 
 class IncomingCallActivity : GenericActivity() {

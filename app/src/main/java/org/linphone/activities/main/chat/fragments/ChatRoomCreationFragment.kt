@@ -26,7 +26,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import org.linphone.LinphoneApplication
 import org.linphone.R
 import org.linphone.activities.main.MainActivity
 import org.linphone.activities.main.chat.adapters.ChatRoomCreationContactsAdapter
@@ -37,6 +36,7 @@ import org.linphone.activities.main.navigateToGroupInfo
 import org.linphone.activities.main.viewmodels.SharedMainViewModel
 import org.linphone.core.tools.Log
 import org.linphone.databinding.ChatRoomCreationFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication
 import org.linphone.utils.PermissionHelper
 
 class ChatRoomCreationFragment : SecureFragment<ChatRoomCreationFragmentBinding>() {

@@ -24,7 +24,6 @@ import android.content.Context.CLIPBOARD_SERVICE
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.activities.assistant.AssistantActivity
@@ -34,6 +33,7 @@ import org.linphone.activities.assistant.viewmodels.SharedAssistantViewModel
 import org.linphone.activities.main.navigateToAccountSettings
 import org.linphone.activities.main.navigateToEchoCancellerCalibration
 import org.linphone.databinding.AssistantPhoneAccountValidationFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class PhoneAccountValidationFragment : GenericFragment<AssistantPhoneAccountValidationFragmentBinding>() {
     private lateinit var sharedViewModel: SharedAssistantViewModel

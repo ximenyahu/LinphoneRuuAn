@@ -27,13 +27,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.main.chat.data.ChatRoomCreationContactData
 import org.linphone.core.Address
 import org.linphone.core.FriendCapability
 import org.linphone.core.SearchResult
 import org.linphone.databinding.ChatRoomCreationContactCellBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.Event
 
 class ChatRoomCreationContactsAdapter(

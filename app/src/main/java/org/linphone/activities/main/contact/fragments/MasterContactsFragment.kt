@@ -29,7 +29,6 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.main.MainActivity
 import org.linphone.activities.main.contact.adapters.ContactsListAdapter
@@ -43,6 +42,7 @@ import org.linphone.contact.Contact
 import org.linphone.core.Factory
 import org.linphone.core.tools.Log
 import org.linphone.databinding.ContactMasterFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.*
 
 class MasterContactsFragment : MasterFragment<ContactMasterFragmentBinding, ContactsListAdapter>() {

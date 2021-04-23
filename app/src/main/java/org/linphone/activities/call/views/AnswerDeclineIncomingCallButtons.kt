@@ -30,11 +30,11 @@ import android.view.View.OnTouchListener
 import android.view.animation.LinearInterpolator
 import android.widget.LinearLayout
 import androidx.databinding.DataBindingUtil
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.call.viewmodels.IncomingCallViewModel
 import org.linphone.core.tools.Log
 import org.linphone.databinding.CallIncomingAnswerDeclineButtonsBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 class AnswerDeclineIncomingCallButtons : LinearLayout {
     private lateinit var binding: CallIncomingAnswerDeclineButtonsBinding

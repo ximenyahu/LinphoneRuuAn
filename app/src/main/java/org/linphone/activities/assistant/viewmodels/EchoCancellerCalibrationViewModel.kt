@@ -22,11 +22,11 @@ package org.linphone.activities.assistant.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.core.Core
 import org.linphone.core.CoreListenerStub
 import org.linphone.core.EcCalibratorStatus
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.Event
 
 class EchoCancellerCalibrationViewModel : ViewModel() {

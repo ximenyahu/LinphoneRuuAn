@@ -19,10 +19,10 @@
  */
 package org.linphone.utils
 
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.core.AudioDevice
 import org.linphone.core.Call
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class AudioRouteUtils {
     companion object {

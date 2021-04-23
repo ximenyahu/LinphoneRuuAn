@@ -25,7 +25,6 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.assistant.AssistantActivity
 import org.linphone.activities.assistant.viewmodels.AccountLoginViewModel
@@ -35,6 +34,7 @@ import org.linphone.activities.main.navigateToEchoCancellerCalibration
 import org.linphone.activities.main.navigateToPhoneAccountValidation
 import org.linphone.activities.main.viewmodels.DialogViewModel
 import org.linphone.databinding.AssistantAccountLoginFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.DialogUtils
 
 class AccountLoginFragment : AbstractPhoneFragment<AssistantAccountLoginFragmentBinding>() {

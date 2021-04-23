@@ -23,10 +23,10 @@ import android.content.Context
 import android.database.Cursor
 import android.os.AsyncTask
 import android.provider.ContactsContract
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.core.*
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.LinphoneUtils
 import org.linphone.utils.PermissionHelper
 

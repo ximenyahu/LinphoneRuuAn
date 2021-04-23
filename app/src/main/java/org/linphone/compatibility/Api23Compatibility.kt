@@ -24,10 +24,10 @@ import android.app.NotificationManager
 import android.content.Context
 import android.content.pm.PackageManager
 import android.provider.Settings
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.contact.Contact
 import org.linphone.core.Address
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 @TargetApi(23)
 class Api23Compatibility {

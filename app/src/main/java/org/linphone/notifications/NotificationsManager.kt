@@ -36,8 +36,6 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.LocusIdCompat
 import androidx.core.graphics.drawable.IconCompat
 import androidx.navigation.NavDeepLinkBuilder
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.call.CallActivity
 import org.linphone.activities.call.IncomingCallActivity
@@ -48,6 +46,8 @@ import org.linphone.compatibility.Compatibility
 import org.linphone.contact.Contact
 import org.linphone.core.*
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.AppUtils
 import org.linphone.utils.FileUtils
 import org.linphone.utils.ImageUtils

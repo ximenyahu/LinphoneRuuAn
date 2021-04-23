@@ -22,13 +22,13 @@ package org.linphone.activities.main.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.activities.main.viewmodels.SharedMainViewModel
 import org.linphone.activities.main.viewmodels.StatusViewModel
 import org.linphone.core.tools.Log
 import org.linphone.databinding.StatusFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.Event
 
 class StatusFragment : GenericFragment<StatusFragmentBinding>() {

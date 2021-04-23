@@ -27,12 +27,12 @@ import java.util.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.core.AudioDevice
 import org.linphone.core.Call
 import org.linphone.core.Core
 import org.linphone.core.CoreListenerStub
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class ControlsFadingViewModel : ViewModel() {
     val areControlsHidden = MutableLiveData<Boolean>()

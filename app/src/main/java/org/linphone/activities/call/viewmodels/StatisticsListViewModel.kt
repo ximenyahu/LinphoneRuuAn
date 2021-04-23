@@ -21,11 +21,11 @@ package org.linphone.activities.call.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.activities.call.data.CallStatisticsData
 import org.linphone.core.Call
 import org.linphone.core.Core
 import org.linphone.core.CoreListenerStub
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class StatisticsListViewModel : ViewModel() {
     val callStatsList = MutableLiveData<ArrayList<CallStatisticsData>>()

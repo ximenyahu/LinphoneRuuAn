@@ -30,13 +30,13 @@ import androidx.lifecycle.viewModelScope
 import kotlin.math.max
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.main.dialer.NumpadDigitListener
 import org.linphone.compatibility.Compatibility
 import org.linphone.core.*
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.AppUtils
 import org.linphone.utils.AudioRouteUtils
 import org.linphone.utils.Event

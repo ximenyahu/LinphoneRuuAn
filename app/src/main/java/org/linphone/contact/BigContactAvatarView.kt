@@ -25,9 +25,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import androidx.databinding.DataBindingUtil
-import org.linphone.LinphoneApplication
 import org.linphone.R
 import org.linphone.databinding.ContactAvatarBigBinding
+import org.linphone.ruan.application.LinphoneApplication
 import org.linphone.utils.AppUtils
 
 class BigContactAvatarView : LinearLayout {

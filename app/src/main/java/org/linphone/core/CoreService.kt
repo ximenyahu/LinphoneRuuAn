@@ -20,10 +20,10 @@
 package org.linphone.core
 
 import android.content.Intent
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.core.tools.Log
 import org.linphone.core.tools.service.CoreService
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 class CoreService : CoreService() {
     override fun onCreate() {

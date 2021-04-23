@@ -24,10 +24,10 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import androidx.databinding.DataBindingUtil
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.core.ChatRoomSecurityLevel
 import org.linphone.databinding.ContactAvatarBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.AppUtils
 
 class ContactAvatarView : LinearLayout {

@@ -25,12 +25,12 @@ import android.view.View
 import androidx.core.view.doOnPreDraw
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.LinphoneApplication
 import org.linphone.R
 import org.linphone.activities.main.adapters.SelectionListAdapter
 import org.linphone.activities.main.viewmodels.DialogViewModel
 import org.linphone.activities.main.viewmodels.ListTopBarViewModel
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication
 import org.linphone.utils.AppUtils
 import org.linphone.utils.DialogUtils
 

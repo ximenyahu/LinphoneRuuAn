@@ -28,11 +28,11 @@ import java.util.*
 import java.util.regex.Pattern
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.ticker
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.core.AudioDevice
 import org.linphone.core.Player
 import org.linphone.core.PlayerListener
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.LinphoneUtils
 
 class RecordingData(val path: String) : Comparable<RecordingData> {

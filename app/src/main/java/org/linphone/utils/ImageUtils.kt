@@ -26,8 +26,8 @@ import android.media.ThumbnailUtils
 import android.net.Uri
 import android.provider.MediaStore
 import java.io.File
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class ImageUtils {
     companion object {

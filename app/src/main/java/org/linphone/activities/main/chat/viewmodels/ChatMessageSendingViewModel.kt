@@ -23,12 +23,12 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import java.io.File
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.activities.main.chat.data.ChatMessageAttachmentData
 import org.linphone.core.ChatMessage
 import org.linphone.core.ChatRoom
 import org.linphone.core.ChatRoomCapabilities
 import org.linphone.core.Factory
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.FileUtils
 
 class ChatMessageSendingViewModelFactory(private val chatRoom: ChatRoom) :

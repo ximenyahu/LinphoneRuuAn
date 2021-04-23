@@ -31,7 +31,6 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.main.adapters.SelectionListAdapter
 import org.linphone.activities.main.chat.data.ChatMessageData
@@ -44,6 +43,7 @@ import org.linphone.core.Content
 import org.linphone.core.EventLog
 import org.linphone.databinding.ChatEventListCellBinding
 import org.linphone.databinding.ChatMessageListCellBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.Event
 
 class ChatMessagesListAdapter(

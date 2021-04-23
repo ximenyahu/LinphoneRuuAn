@@ -23,10 +23,10 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.addCallback
 import androidx.navigation.fragment.findNavController
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.databinding.AssistantTopBarFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 class TopBarFragment : GenericFragment<AssistantTopBarFragmentBinding>() {
     override fun getLayoutId(): Int = R.layout.assistant_top_bar_fragment

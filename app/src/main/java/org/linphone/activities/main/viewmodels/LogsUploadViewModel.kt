@@ -22,9 +22,9 @@ package org.linphone.activities.main.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.core.Core
 import org.linphone.core.CoreListenerStub
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.Event
 
 open class LogsUploadViewModel : ViewModel() {

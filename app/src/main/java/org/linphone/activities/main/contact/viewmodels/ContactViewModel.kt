@@ -24,8 +24,6 @@ import android.provider.ContactsContract
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.main.contact.data.ContactNumberOrAddressClickListener
 import org.linphone.activities.main.contact.data.ContactNumberOrAddressData
@@ -36,6 +34,8 @@ import org.linphone.contact.ContactsUpdatedListenerStub
 import org.linphone.contact.NativeContact
 import org.linphone.core.*
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.Event
 import org.linphone.utils.LinphoneUtils
 

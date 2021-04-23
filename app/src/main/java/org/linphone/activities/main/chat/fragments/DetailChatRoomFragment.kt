@@ -40,8 +40,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.io.File
 import kotlinx.coroutines.launch
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.main.*
 import org.linphone.activities.main.chat.ChatScrollListener
@@ -54,6 +52,8 @@ import org.linphone.compatibility.Compatibility
 import org.linphone.core.*
 import org.linphone.core.tools.Log
 import org.linphone.databinding.ChatRoomDetailFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.*
 import org.linphone.utils.Event
 

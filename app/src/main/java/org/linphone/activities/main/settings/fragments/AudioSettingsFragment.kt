@@ -28,13 +28,13 @@ import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import org.linphone.BR
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.activities.main.settings.SettingListenerStub
 import org.linphone.activities.main.settings.viewmodels.AudioSettingsViewModel
 import org.linphone.core.tools.Log
 import org.linphone.databinding.SettingsAudioFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.PermissionHelper
 
 class AudioSettingsFragment : GenericFragment<SettingsAudioFragmentBinding>() {

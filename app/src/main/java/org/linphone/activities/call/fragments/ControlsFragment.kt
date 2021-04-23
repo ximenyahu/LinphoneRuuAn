@@ -30,8 +30,6 @@ import android.os.SystemClock
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.flexbox.FlexboxLayout
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.activities.call.viewmodels.CallsViewModel
@@ -44,6 +42,8 @@ import org.linphone.core.Call
 import org.linphone.core.tools.Log
 import org.linphone.databinding.CallControlsFragmentBinding
 import org.linphone.mediastream.Version
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.AppUtils
 import org.linphone.utils.DialogUtils
 import org.linphone.utils.Event

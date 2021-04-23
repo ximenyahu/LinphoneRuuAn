@@ -20,9 +20,9 @@
 package org.linphone.contact
 
 import androidx.lifecycle.MutableLiveData
-import org.linphone.LinphoneApplication
 import org.linphone.core.Address
 import org.linphone.core.ChatRoomSecurityLevel
+import org.linphone.ruan.application.LinphoneApplication
 import org.linphone.utils.LinphoneUtils
 
 interface ContactDataInterface {

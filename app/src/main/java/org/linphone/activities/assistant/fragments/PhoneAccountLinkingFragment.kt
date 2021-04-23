@@ -22,7 +22,6 @@ package org.linphone.activities.assistant.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.LinphoneApplication
 import org.linphone.R
 import org.linphone.activities.assistant.AssistantActivity
 import org.linphone.activities.assistant.viewmodels.*
@@ -30,6 +29,7 @@ import org.linphone.activities.main.navigateToEchoCancellerCalibration
 import org.linphone.activities.main.navigateToPhoneAccountValidation
 import org.linphone.core.tools.Log
 import org.linphone.databinding.AssistantPhoneAccountLinkingFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication
 
 class PhoneAccountLinkingFragment : AbstractPhoneFragment<AssistantPhoneAccountLinkingFragmentBinding>() {
     private lateinit var sharedViewModel: SharedAssistantViewModel

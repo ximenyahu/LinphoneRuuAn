@@ -23,7 +23,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.activities.main.*
@@ -36,6 +35,7 @@ import org.linphone.activities.main.viewmodels.SharedMainViewModel
 import org.linphone.contact.NativeContact
 import org.linphone.core.tools.Log
 import org.linphone.databinding.HistoryDetailFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class DetailCallLogFragment : GenericFragment<HistoryDetailFragmentBinding>() {
     private lateinit var viewModel: CallLogViewModel

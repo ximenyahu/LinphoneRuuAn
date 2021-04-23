@@ -25,7 +25,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
 import androidx.navigation.fragment.findNavController
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.activities.main.navigateToCallHistory
@@ -34,6 +33,7 @@ import org.linphone.activities.main.navigateToContacts
 import org.linphone.activities.main.navigateToDialer
 import org.linphone.activities.main.viewmodels.TabsViewModel
 import org.linphone.databinding.TabsFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 class TabsFragment : GenericFragment<TabsFragmentBinding>(), NavController.OnDestinationChangedListener {
     private lateinit var viewModel: TabsViewModel

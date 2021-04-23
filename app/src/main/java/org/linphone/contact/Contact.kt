@@ -25,12 +25,12 @@ import android.net.Uri
 import androidx.core.app.Person
 import androidx.core.graphics.drawable.IconCompat
 import java.text.Collator
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.core.Address
 import org.linphone.core.Friend
 import org.linphone.core.PresenceBasicStatus
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.ImageUtils
 
 data class PhoneNumber(val value: String, val typeLabel: String) : Comparable<PhoneNumber> {

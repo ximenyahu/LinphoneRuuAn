@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/navigation_bench"
-        android:name="org.linphone.ui.home.BenchFragment"
+        android:name="org.linphone.ruan.home.BenchFragment"
         android:label="@string/title_bench"
         tools:layout="@layout/fragment_bench" />
 
     <fragment
         android:id="@+id/navigation_message"
-        android:name="org.linphone.ui.message.MessageFragment"
+        android:name="org.linphone.ruan.message.MessageFragment"
         android:label="@string/title_message"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_contacts"
-        android:name="org.linphone.ui.contacts.ContactsFragment"
+        android:name="org.linphone.ruan.contacts.ContactsFragment"
         android:label="@string/title_contacts"
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
         android:id="@+id/navigation_mine"
-        android:name="org.linphone.ui.mine.MineFragment"
+        android:name="org.linphone.ruan.mine.MineFragment"
         android:label="@string/title_mine"
         tools:layout="@layout/fragment_mine" />
 </navigation>

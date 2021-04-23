@@ -21,9 +21,9 @@ package org.linphone.activities.call.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.core.*
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.Event
 import org.linphone.utils.PermissionHelper
 

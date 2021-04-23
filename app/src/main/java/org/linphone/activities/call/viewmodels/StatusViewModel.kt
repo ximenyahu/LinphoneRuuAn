@@ -20,10 +20,10 @@
 package org.linphone.activities.call.viewmodels
 
 import androidx.lifecycle.MutableLiveData
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.R
 import org.linphone.activities.main.viewmodels.StatusViewModel
 import org.linphone.core.*
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 import org.linphone.utils.Event
 
 class StatusViewModel : StatusViewModel() {

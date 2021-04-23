@@ -26,11 +26,11 @@ import android.telephony.TelephonyManager.*
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.core.*
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 /**
  * Various utility methods for Linphone SDK

@@ -26,9 +26,9 @@ import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
 import android.os.PowerManager
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.activities.GenericActivity
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 abstract class ProximitySensorActivity : GenericActivity() {
     private lateinit var sensorManager: SensorManager

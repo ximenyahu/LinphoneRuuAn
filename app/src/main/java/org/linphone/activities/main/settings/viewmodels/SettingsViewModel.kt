@@ -21,9 +21,9 @@ package org.linphone.activities.main.settings.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.activities.main.settings.SettingListenerStub
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 class SettingsViewModel : ViewModel() {
     private val tunnelAvailable: Boolean = coreContext.core.tunnelAvailable()

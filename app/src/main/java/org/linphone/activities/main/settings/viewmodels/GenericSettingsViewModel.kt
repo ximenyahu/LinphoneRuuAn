@@ -20,8 +20,8 @@
 package org.linphone.activities.main.settings.viewmodels
 
 import androidx.lifecycle.ViewModel
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 abstract class GenericSettingsViewModel : ViewModel() {
     protected val prefs = corePreferences

@@ -21,7 +21,7 @@ package org.linphone.activities.assistant.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.linphone.LinphoneApplication.Companion.corePreferences
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 class WelcomeViewModel : ViewModel() {
     val showCreateAccount: Boolean = corePreferences.showCreateAccount

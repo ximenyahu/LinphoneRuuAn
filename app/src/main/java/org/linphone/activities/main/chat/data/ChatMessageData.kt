@@ -24,9 +24,6 @@ import android.text.Spannable
 import android.text.util.Linkify
 import androidx.core.text.util.LinkifyCompat
 import androidx.lifecycle.MutableLiveData
-import kotlinx.coroutines.*
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.contact.GenericContactData
 import org.linphone.core.ChatMessage
@@ -34,6 +31,8 @@ import org.linphone.core.ChatMessageListenerStub
 import org.linphone.core.Content
 import org.linphone.core.tools.Log
 import org.linphone.mediastream.Version
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.AppUtils
 import org.linphone.utils.PermissionHelper
 import org.linphone.utils.TimestampUtils

@@ -30,8 +30,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import java.io.File
 import kotlinx.coroutines.launch
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.activities.assistant.AssistantActivity
@@ -44,6 +42,8 @@ import org.linphone.activities.main.sidemenu.viewmodels.SideMenuViewModel
 import org.linphone.activities.main.viewmodels.SharedMainViewModel
 import org.linphone.core.tools.Log
 import org.linphone.databinding.SideMenuFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.Event
 import org.linphone.utils.FileUtils
 import org.linphone.utils.ImageUtils

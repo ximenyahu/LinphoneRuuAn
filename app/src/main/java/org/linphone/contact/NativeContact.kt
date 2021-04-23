@@ -27,12 +27,12 @@ import android.net.Uri
 import android.provider.ContactsContract
 import androidx.core.app.Person
 import androidx.core.graphics.drawable.IconCompat
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.core.Address
 import org.linphone.core.SubscribePolicy
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.AppUtils
 import org.linphone.utils.ImageUtils
 

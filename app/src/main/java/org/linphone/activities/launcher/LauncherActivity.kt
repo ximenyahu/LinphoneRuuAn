@@ -21,12 +21,12 @@ package org.linphone.activities.launcher
 
 import android.content.Intent
 import android.os.Bundle
-import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.GenericActivity
-import org.linphone.activities.main.MainActivity
 import org.linphone.core.tools.Log
+import org.linphone.ruan.RuAnMainActivity
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 
 class LauncherActivity : GenericActivity() {
 
@@ -51,7 +51,7 @@ class LauncherActivity : GenericActivity() {
         }
 
         val intent = Intent()
-        intent.setClass(this, MainActivity::class.java)
+        intent.setClass(this, RuAnMainActivity::class.java)
 
         // Propagate current intent action, type and data
         if (getIntent() != null) {

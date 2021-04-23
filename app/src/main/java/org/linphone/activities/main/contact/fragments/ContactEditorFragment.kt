@@ -32,7 +32,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import java.io.File
 import kotlinx.coroutines.launch
-import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
 import org.linphone.activities.GenericFragment
 import org.linphone.activities.main.MainActivity
@@ -43,6 +42,7 @@ import org.linphone.activities.main.viewmodels.SharedMainViewModel
 import org.linphone.contact.NativeContact
 import org.linphone.core.tools.Log
 import org.linphone.databinding.ContactEditorFragmentBinding
+import org.linphone.ruan.application.LinphoneApplication.Companion.corePreferences
 import org.linphone.utils.FileUtils
 import org.linphone.utils.ImageUtils
 import org.linphone.utils.PermissionHelper

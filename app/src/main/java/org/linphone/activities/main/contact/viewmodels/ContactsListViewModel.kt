@@ -24,11 +24,11 @@ import android.provider.ContactsContract
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import java.util.*
-import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.contact.Contact
 import org.linphone.contact.ContactsUpdatedListenerStub
 import org.linphone.contact.NativeContact
 import org.linphone.core.tools.Log
+import org.linphone.ruan.application.LinphoneApplication.Companion.coreContext
 
 class ContactsListViewModel : ViewModel() {
     val sipContactsSelected = MutableLiveData<Boolean>()
