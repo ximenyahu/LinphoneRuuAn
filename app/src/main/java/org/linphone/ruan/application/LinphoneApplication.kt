@@ -27,6 +27,7 @@ import org.linphone.core.CorePreferences
 import org.linphone.core.Factory
 import org.linphone.core.LogCollectionState
 import org.linphone.core.tools.Log
+import org.linphone.ruan.database.ContactRepository
 
 class LinphoneApplication : Application() {
     companion object {
@@ -49,7 +50,10 @@ class LinphoneApplication : Application() {
                 CoreContext.activateVFS()
             }
 
-            val config = Factory.instance().createConfigWithFactory(corePreferences.configPath, corePreferences.factoryConfigPath)
+            val config = Factory.instance().createConfigWithFactory(
+                corePreferences.configPath,
+                corePreferences.factoryConfigPath
+            )
             corePreferences.config = config
 
             val appName = context.getString(R.string.app_name)
@@ -67,5 +71,9 @@ class LinphoneApplication : Application() {
         android.util.Log.i("[$appName]", "Application is being created")
         ensureCoreExists(applicationContext)
         Log.i("[Application] Created")
+
+        // Add by Simon 2021年4月25日15:07:17
+        ContactRepository.initialize(this)
+        // End
     }
 }

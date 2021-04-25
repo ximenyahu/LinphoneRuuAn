@@ -37,9 +37,9 @@ class RuAnMainActivity : AppCompatActivity() {
         /**
          * 设置顶部ActionBar
          */
-        // val appBarConfiguration = AppBarConfiguration(setOf(
-        // R.id.navigation_bench, R.id.navigation_message, R.id.navigation_contacts, R.id.navigation_mine))
-        // setupActionBarWithNavController(navController, appBarConfiguration)
+//         val appBarConfiguration = AppBarConfiguration(setOf(
+//         R.id.navigation_bench, R.id.navigation_message, R.id.navigation_contacts, R.id.navigation_mine))
+//         setupActionBarWithNavController(navController, appBarConfiguration)
 
         // 底部导航区域显示模式
         navView.labelVisibilityMode = LabelVisibilityMode.LABEL_VISIBILITY_LABELED

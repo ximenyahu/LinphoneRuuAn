@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
+
+    <!--Add by Simon-->
+    <style name="RuAnTheme" parent="@style/Theme.AppCompat.Light.NoActionBar"></style>
+    <!--End-->
+
     <!-- Base application theme. -->
 
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
