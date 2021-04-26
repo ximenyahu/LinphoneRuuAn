@@ -245,6 +245,8 @@ dependencies {
     //Add by Simon 2021年4月25日09:23:22
     implementation 'androidx.room:room-runtime:2.2.5'
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
     kapt 'androidx.room:room-compiler:2.2.5'
     //End
     kapt 'com.github.bumptech.glide:compiler:4.12.0'

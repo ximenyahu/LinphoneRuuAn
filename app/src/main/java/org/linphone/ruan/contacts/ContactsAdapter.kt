@@ -6,15 +6,16 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import org.linphone.R
+import org.linphone.ruan.database.SIPAccount
 
-class ContactsAdapter() :
+class ContactsAdapter(var SIPAccountList: List<SIPAccount>) :
     RecyclerView.Adapter<ContactsAdapter.ContactsViewHolder>() {
 
     class ContactsViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val contactName: TextView = itemView.findViewById(R.id.contact_name)
 
-        fun bind() {
-            contactName.text = "Simon"
+        fun bind(SIPAccount: SIPAccount) {
+            contactName.text = SIPAccount.name
         }
     }
 
@@ -25,10 +26,11 @@ class ContactsAdapter() :
     }
 
     override fun onBindViewHolder(holder: ContactsViewHolder, position: Int) {
-        holder.bind()
+        var account = SIPAccountList[position]
+        holder.bind(account)
     }
 
     override fun getItemCount(): Int {
-        return 50
+        return SIPAccountList.size
     }
 }

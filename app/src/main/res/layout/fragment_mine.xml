@@ -5,11 +5,11 @@
 
     <data>
 
-        <import type="org.linphone.ruan.mine.Account" />
+        <import type="org.linphone.ruan.database.SIPAccount" />
 
         <variable
             name="account"
-            type="Account" />
+            type="org.linphone.ruan.database.SIPAccount" />
     </data>
 
     <LinearLayout

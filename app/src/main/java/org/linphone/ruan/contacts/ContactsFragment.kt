@@ -32,8 +32,15 @@ class ContactsFragment : Fragment() {
 
         recyclerView = root.findViewById(R.id.recyclerview_contact)
         recyclerView.layoutManager = LinearLayoutManager(context)
-        contactsAdapter = ContactsAdapter()
-        recyclerView.adapter = contactsAdapter
+
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        contactsViewModel.contactListLiveData.observe(viewLifecycleOwner, {
+            contactsAdapter = ContactsAdapter(it)
+            recyclerView.adapter = contactsAdapter
+        })
     }
 }
